@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input type="text" id="num1"> <input type="text" id="num2"> <button onclick="cal()">Tính</button>
+<p id="rs1"></p>
+<p id="rs2"></p>
+</body>
+</html>
+<script>
+    function cal() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        document.getElementById("rs1").innerHTML = a + "^2 = " + a**2;
+        document.getElementById("rs2").innerHTML = a + "*" + b + " = " + a*b;
+    }
+</script>

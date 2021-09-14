@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Năm ra thế kỷ</title>
+</head>
+<body>
+<input type="text" id="nam"> <button onclick="cal()">Tra cứu</button>
+<h5 id="rs"></h5>
+</body>
+</html>
+<script>
+    function cal () {
+        let year = parseInt(document.getElementById("nam").value);
+        if (year % 100 == 0) {
+            let tk = year / 100;
+            document.getElementById("rs").innerHTML = "Năm " + year + " thuộc thế kỷ " + tk;
+        }
+        else {
+            let phepchia = parseInt(year / 100);
+            document.getElementById("rs").innerHTML = "Năm " + year + " thuộc thế kỷ " + (phepchia + 1);
+        }
+    }
+
+
+</script>

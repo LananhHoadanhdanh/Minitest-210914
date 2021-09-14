@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = parseInt(prompt("Nhập số bắt đầu"));
+    let b = parseInt(prompt("Nhập số kết thúc"));
+    if (a > b) {
+        alert("Số bắt đầu lớn hơn số kết thúc rồi kìa, nhập lại đi!")
+    }
+    else {
+        let i = a;
+        let sum = 0
+        while (i <= b) {
+            sum = sum + i;
+            i = i + 1;
+        }
+        alert("Tổng các số từ " + a + " đến " + b + " là " + sum);
+    }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi và diện tích hình vuông</title>
+</head>
+<body>
+<input type="text" id="canh"> <button onclick="cal()">Tính</button>
+<p id="sandv"></p>
+</body>
+</html>
+<script>
+    function cal() {
+        let chieudai = document.getElementById("canh").value;
+        let v = chieudai * 4;
+        let s = chieudai ** 2;
+        document.getElementById("sandv").innerHTML = "Chu vi của hình vuôn là " + v + " còn diện tích của hình vuông là " + s;
+    }
+
+
+
+</script>
